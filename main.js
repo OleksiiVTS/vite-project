@@ -1,4 +1,4 @@
-import "./style.css";
+// import "./style.css";
 // import { click } from "./click";
 
 const div = document.querySelector("#app");
