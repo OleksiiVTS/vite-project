@@ -1,5 +1,5 @@
 import "./style.css";
-import { click } from "./click";
+// import { click } from "./click";
 
 const div = document.querySelector("#app");
 const newDiv = document.createElement("div");
@@ -28,4 +28,19 @@ function setupCounter(element) {
     return;
   }
   click(clickDiv);
+}
+
+function click(element) {
+  if (div.classList.contains("gap")) {
+    if (element.classList.contains("up")) {
+      element.classList.toggle("up");
+      div.classList.toggle("gap");
+      return;
+    }
+    const toggleClass = document.querySelector(".up");
+    toggleClass.classList.toggle("up");
+    div.classList.toggle("gap");
+  }
+  element.classList.toggle("up");
+  div.classList.toggle("gap");
 }
