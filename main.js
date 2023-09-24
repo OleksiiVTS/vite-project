@@ -12,10 +12,11 @@ for (let i = 0; i < 100; i++) {
 
 newDiv.classList.add("flex");
 div.append(newDiv);
-div.addEventListener("click", setupCounter);
+div.addEventListener("click", divUp);
 
-function setupCounter(element) {
+function divUp(element) {
   const clickDiv = element.target;
+  // console.dir(element.target.attributes.class.value);
   if (element.target.id === "app") {
     return;
   }
